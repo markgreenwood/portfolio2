@@ -1,14 +1,33 @@
-nav {
-  ul {
-    list-style: none;
+header {
+  text-align: center;
+  background: darkgoldenrod;
+
+  h1, h2 {
+    font-family: Mirza, serif;
+    text-align: center;
   }
 
-  li {
-    display: inline-block;
-    background: lightgray;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+  nav {
+    margin: auto 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      background: lightgray;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      font-variant: small-caps;
+    }
   }
 }
 
+footer {
+  p {
+    font-family: Mirza, serif;
+  }
+}
