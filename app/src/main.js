@@ -3,10 +3,10 @@ import './scss/main.scss';
 import components from './components';
 import services from './services';
 import uiRouter from 'angular-ui-router';
-import routes from './routes';
+// import routes from './routes';
 
 const app = angular.module('portfolio2', [ components, services, uiRouter ]);
-app.config(routes);
+// app.config(routes);
 
 const dev = 'http://localhost:3000/api';
 app.value('apiUrl', dev);

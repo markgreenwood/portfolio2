@@ -52,26 +52,24 @@
 	
 	__webpack_require__(3);
 	
-	var _components = __webpack_require__(4);
+	var _components = __webpack_require__(7);
 	
 	var _components2 = _interopRequireDefault(_components);
 	
-	var _services = __webpack_require__(9);
+	var _services = __webpack_require__(16);
 	
 	var _services2 = _interopRequireDefault(_services);
 	
-	var _angularUiRouter = __webpack_require__(11);
+	var _angularUiRouter = __webpack_require__(18);
 	
 	var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 	
-	var _routes = __webpack_require__(12);
-	
-	var _routes2 = _interopRequireDefault(_routes);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// import routes from './routes';
+	
 	var app = _angular2.default.module('portfolio2', [_components2.default, _services2.default, _angularUiRouter2.default]);
-	app.config(_routes2.default);
+	// app.config(routes);
 	
 	var dev = 'http://localhost:3000/api';
 	app.value('apiUrl', dev);
@@ -32991,10 +32989,13 @@
 /* 3 */
 /***/ function(module, exports) {
 
-
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 4 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33007,17 +33008,17 @@
 	
 	var _angular2 = _interopRequireDefault(_angular);
 	
-	var _camelcase = __webpack_require__(5);
+	var _camelcase = __webpack_require__(8);
 	
 	var _camelcase2 = _interopRequireDefault(_camelcase);
 	
-	var _path = __webpack_require__(6);
+	var _path = __webpack_require__(9);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var context = __webpack_require__(8);
+	var context = __webpack_require__(11);
 	
 	var _module = _angular2.default.module('components', []);
 	
@@ -33029,7 +33030,7 @@
 	exports.default = _module.name;
 
 /***/ },
-/* 5 */
+/* 8 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33062,7 +33063,7 @@
 
 
 /***/ },
-/* 6 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -33290,10 +33291,10 @@
 	    }
 	;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 7 */
+/* 10 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -33479,20 +33480,71 @@
 
 
 /***/ },
-/* 8 */
-/***/ function(module, exports) {
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
 
+	var map = {
+		"./app/app.js": 12
+	};
 	function webpackContext(req) {
-		throw new Error("Cannot find module '" + req + "'.");
-	}
-	webpackContext.keys = function() { return []; };
-	webpackContext.resolve = webpackContext;
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 8;
+	webpackContext.id = 11;
 
 
 /***/ },
-/* 9 */
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _app = __webpack_require__(13);
+	
+	var _app2 = _interopRequireDefault(_app);
+	
+	var _app3 = __webpack_require__(14);
+	
+	var _app4 = _interopRequireDefault(_app3);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  template: _app2.default,
+	  controller: controller
+	};
+	
+	
+	function controller() {
+	  this.styles = _app4.default;
+	}
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = "<header>\n  <h1>Mark's Portfolio App</h1>\n  <nav>\n    <ul>\n      <li>Home</li>\n      <li>Projects</li>\n      <li>Articles</li>\n      <li>About</li>\n    </ul>\n  </nav>\n</header>\n\n<main>\n  <p>Learn about Mark and his skills as a full-stack developer</p>\n</main>\n\n<footer>\n  &copy;2016 Mark Greenwood\n</footer>";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 15 */,
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33505,17 +33557,17 @@
 	
 	var _angular2 = _interopRequireDefault(_angular);
 	
-	var _camelcase = __webpack_require__(5);
+	var _camelcase = __webpack_require__(8);
 	
 	var _camelcase2 = _interopRequireDefault(_camelcase);
 	
-	var _path = __webpack_require__(6);
+	var _path = __webpack_require__(9);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var context = __webpack_require__(10);
+	var context = __webpack_require__(17);
 	
 	var _module = _angular2.default.module('services', []);
 	
@@ -33527,7 +33579,7 @@
 	exports.default = _module.name;
 
 /***/ },
-/* 10 */
+/* 17 */
 /***/ function(module, exports) {
 
 	function webpackContext(req) {
@@ -33536,11 +33588,11 @@
 	webpackContext.keys = function() { return []; };
 	webpackContext.resolve = webpackContext;
 	module.exports = webpackContext;
-	webpackContext.id = 10;
+	webpackContext.id = 17;
 
 
 /***/ },
-/* 11 */
+/* 18 */
 /***/ function(module, exports) {
 
 	/**
@@ -38152,12 +38204,6 @@
 	  .filter('isState', $IsStateFilter)
 	  .filter('includedByState', $IncludedByStateFilter);
 	})(window, window.angular);
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	"use strict";
 
 /***/ }
 /******/ ]);
