@@ -1,0 +1,12 @@
+<md-content flex layout-padding>
+  <md-list>
+    <md-list-item class="md-3-line" ng-repeat="education in $ctrl.educations">
+      <img class="org-logo" ng-src="{{ education.logo }}" width="100px">
+      <div class="md-list-item-text" layout="column">
+        <h3>{{ education.school }}</h3>
+        <h4>{{ education.cert }}</h4>
+        <p>{{ education.start }}-{{ education.finish }}</p>
+      </div>
+    </md-list-item>
+  </md-list>
+</md-content>

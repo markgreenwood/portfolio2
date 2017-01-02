@@ -1,33 +1,51 @@
 header {
   text-align: center;
-  background: darkgoldenrod;
 
   h1, h2 {
-    font-family: Mirza, serif;
+    // font-family: Mirza, serif;
     text-align: center;
   }
 
-  nav {
-    margin: auto 0;
+  // nav {
+  //   margin: auto 0;
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+  //   ul {
+  //     list-style: none;
+  //     padding: 0;
+  //   }
 
-    li {
-      display: inline-block;
-      background: lightgray;
-      border-radius: 5px;
-      padding: 5px;
-      margin: 5px;
-      font-variant: small-caps;
-    }
-  }
+  //   li {
+  //     display: inline-block;
+  //     background: lightgray;
+  //     border-radius: 5px;
+  //     padding: 5px;
+  //     margin: 5px;
+  //     font-variant: small-caps;
+  //   }
+  // }
 }
 
 footer {
   p {
     font-family: Mirza, serif;
   }
+}
+
+#banner-images {
+  display: block;
+
+  img {
+    max-height: 100px;
+    display: inline;
+  }
+}
+
+#banner-text {
+  h1, h2 {
+    padding: 1px;
+  }
+  padding: 10px;
+  display: block;
+  background: darkslategray;
+  color: white;
 }

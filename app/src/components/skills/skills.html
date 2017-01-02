@@ -1,0 +1,8 @@
+<md-content layout-padding>
+  <h3>Skills</h3>
+  <md-grid-list md-cols-gt-md="12" md-cols="3" md-cols-md="8"
+        md-row-height-gt-md="1:1" md-row-height="4:3"
+        md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
+    <md-grid-tile ng-repeat="skill in $ctrl.skills"><img ng-mouseover="$ctrl.showDetails($event, skill)" ng-mouseleave="$ctrl.closeDialog()" ng-src="{{ skill.logo }}" width="75px"></md-grid-tile>
+  </md-grid-list>
+</md-content>

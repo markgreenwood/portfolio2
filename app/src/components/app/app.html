@@ -1,18 +1,27 @@
 <header>
-  <h1>Mark Greenwood</h1>
-  <h2>Full-Stack Developer</h2>
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>Projects</li>
-      <li>Articles</li>
-      <li>About</li>
-    </ul>
-  </nav>
+  <div id="banner-images">
+    <img src="../../images/pythonlogo.jpg">
+    <img src="../../images/javascript6.png">
+    <img src="../../images/cplusplus-pencil.jpg">
+  </div>
+  <div id="banner-text">
+    <h1>Mark Greenwood</h1>
+    <h2>Polyglot Full-Stack Developer</h2>
+  </div>
+  <div id="banner-nav">
+    <md-nav-bar>
+      <md-nav-item md-nav-sref="profile" name="profile">Profile</md-nav-item>
+      <md-nav-item md-nav-sref="projects" name="projects">Projects</md-nav-item>
+      <md-nav-item md-nav-sref="employment" name="employment">Experience</md-nav-item>
+      <md-nav-item md-nav-sref="education" name="education">Education</md-nav-item>
+      <md-nav-item md-nav-sref="skills" name="skills">Skills</md-nav-item>
+      <md-nav-item md-nav-sref="bio" name="bio">Bio</md-nav-item>
+    </md-nav-bar>
+  </div>
 </header>
 
 <main>
-  <resume>Learn about Mark and his skills as a full-stack developer</resume>
+  <ui-view>Learn about Mark and his skills as a full-stack developer</ui-view>
 </main>
 
 <footer>

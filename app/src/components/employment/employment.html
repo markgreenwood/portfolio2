@@ -1,0 +1,12 @@
+<md-content flex layout-padding>
+  <md-list flex>
+    <md-list-item class="md-3-line" ng-repeat="job in $ctrl.jobs">
+      <img class="org-logo" ng-src="{{ job.logo }}">
+      <div class="md-list-item-text" layout="column">
+        <h3>{{ job.title }}</h3>
+        <h4>{{ job.company }} | {{ job.location }} | {{ job.start }}-{{ job.finish }}</h4>
+        <p>{{ job.description }}</p>
+      </div>
+    </md-list-item>
+  </md-list>
+</md-content>
