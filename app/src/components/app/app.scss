@@ -29,6 +29,9 @@ footer {
   p {
     font-family: Mirza, serif;
   }
+  background: linear-gradient(to top, darkslategray, darkslategray 80%, white);
+  color: white;
+  padding: 10px;
 }
 
 #banner-images {
@@ -46,6 +49,6 @@ footer {
   }
   padding: 10px;
   display: block;
-  background: darkslategray;
+  background: linear-gradient(to bottom, white, darkslategray 20%, darkslategray 80%, white);
   color: white;
 }

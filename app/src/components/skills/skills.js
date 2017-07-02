@@ -40,7 +40,7 @@ function controller($mdDialog) {
   this.skills = [
     {
       item: 'AngularJS',
-      logo: 'angularjs.png',
+      logo: 'angular-color.svg',
       details:
         '<li>This application uses AngularJS!</li>' +
         '<li>Image Gallery</li>'
@@ -55,37 +55,61 @@ function controller($mdDialog) {
     },
     {
       item: 'Node.js',
-      logo: 'node-js-logo.png'
+      logo: 'nodejs-color.svg'
     },
     {
-      item: 'git/GitHub',
+      item: 'git',
+      logo: 'git-logo.svg'
+    },
+    {
+      item: 'GitHub',
       logo: 'Octocat.png',
       details:
         '<li>Set up and managed the GitHub repos for all my code school team projects</li>'
     },
     {
       item: 'Python',
-      logo: 'pythonlogo.jpg'
+      logo: 'python-logo-notext.svg'
     },
     {
       item: 'MongoDB',
-      logo: 'mongodb_icon.png'
+      logo: 'mongodb-original-wordmark.svg'
     },
     {
       item: 'SQL',
-      logo: 'sql-mini-logo.png'
+      logo: 'sql-icon.svg'
     },
     {
       item: 'C/C++',
-      logo: 'cplusplus.gif'
+      logo: 'cplusplus-logo.svg'
     },
     {
       item: 'Perl',
-      logo: 'Perl_logo.jpg'
+      logo: 'perl-logo.svg'
     },
     {
       item: 'Django',
-      logo: 'django_logo.jpg'
+      logo: 'django-logo.svg'
+    },
+    {
+      item: 'Jasmine',
+      logo: 'jasmine-logo.svg'
+    },
+    {
+      item: 'Mocha',
+      logo: 'mocha-logo.svg'
+    },
+    {
+      item: 'ChaiJS',
+      logo: 'chai-logo.svg'
+    },
+    {
+      item: 'Karma',
+      logo: 'karma-logo.svg'
+    },
+    {
+      item: 'Selenium',
+      logo: 'selenium-logo.svg'
     }
   ];
 }

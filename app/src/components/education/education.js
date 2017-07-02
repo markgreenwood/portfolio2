@@ -12,7 +12,7 @@ function controller() {
       cert: 'Advanced Software Development in Full-Stack JavaScript',
       start: 'Sep 2016',
       finish: 'Jan 2017',
-      logo: 'code-fellows-logo-only.png'
+      logo: 'Code-fellows-logo.png'
     },
     {
       school: 'Portland State University / Oregon Graduate Institute',
@@ -26,14 +26,14 @@ function controller() {
       cert: 'Master of Science in Electrical Engineering',
       start: '1987',
       finish: '1991',
-      logo: 'WashUShielding.png'
+      logo: 'washu-logo-3line.png'
     },
     {
       school: 'Virginia Tech',
       cert: 'Bachelor of Science in Electrical Engineering',
       start: '1982',
       finish: '1986',
-      logo: 'VT_logo.png'
+      logo: 'VT_logo.svg'
     }
   ];
 }

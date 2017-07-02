@@ -1,0 +1,28 @@
+.col1 {
+  grid-area: col1;
+}
+
+.col2 {
+  grid-area: col2;
+}
+
+.col3 {
+  grid-area: col3;
+}
+
+.col4 {
+  grid-area: col4;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: auto;
+  grid-template-areas:  "col1 col2 col3 col4"
+                        "bottom bottom bottom bottom";
+}

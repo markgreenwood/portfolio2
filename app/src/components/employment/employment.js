@@ -23,7 +23,7 @@ function controller() {
       start: '2001',
       finish: 'March 2014',
       description: 'Did lots of cool things, developed lots of modules, and analyzed tons of data.',
-      logo: 'triquint-logo.jpg'
+      logo: 'triquint-logo.svg'
     },
     {
       title: 'Design Engineer',
@@ -32,7 +32,7 @@ function controller() {
       start: '1996',
       finish: '2001',
       description: 'Designed modules (RFICs) for mobile phones and other wireless devices.',
-      logo: 'triquint-logo.jpg'
+      logo: 'triquint-logo.svg'
 
     },
     {
@@ -42,7 +42,7 @@ function controller() {
       start: '1992',
       finish: '1996',
       description: 'Wrote lots of test code for production test of integrated circuits.',
-      logo: 'triquint-logo.jpg'
+      logo: 'triquint-logo.svg'
     },
     {
       title: 'Senior Systems Engineer',
